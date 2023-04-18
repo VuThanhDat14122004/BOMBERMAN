@@ -935,7 +935,6 @@ public class BombermanGame extends Application {
             }
             if (e.getX() % 32 == 0 && e.getY() % 32 == 0) {
                 if (e.isCheckLeft() && e.isCheckUp()) {
-                    System.out.println(1);
                     if (distance(e.getX() / 32 - 1, e.getY() / 32) < distance(e.getX() / 32, e.getY() / 32 - 1)) {
                         e.setCheckLeft(true);
                         e.setCheckUp(false);
@@ -945,7 +944,6 @@ public class BombermanGame extends Application {
                     }
                 }
                 if (e.isCheckLeft() && e.isCheckDown()) {
-                    System.out.println(2);
                     if (distance(e.getX() / 32 - 1, e.getY() / 32) < distance(e.getX() / 32, e.getY() / 32 + 1)) {
                         e.setCheckLeft(true);
                         e.setCheckDown(false);
@@ -955,7 +953,6 @@ public class BombermanGame extends Application {
                     }
                 }
                 if (e.isCheckRight() && e.isCheckUp()) {
-                    System.out.println(3);
                     if (distance(e.getX() / 32 + 1, e.getY() / 32) < distance(e.getX() / 32, e.getY() / 32 - 1)) {
                         e.setCheckRight(true);
                         e.setCheckUp(false);
@@ -965,7 +962,6 @@ public class BombermanGame extends Application {
                     }
                 }
                 if (e.isCheckRight() && e.isCheckDown()) {
-                    System.out.println(4);
                     if (distance(e.getX() / 32 + 1, e.getY() / 32) < distance(e.getX() / 32, e.getY() / 32 + 1)) {
                         e.setCheckRight(true);
                         e.setCheckDown(false);
@@ -977,27 +973,19 @@ public class BombermanGame extends Application {
             }
             if (e.isCheckLeft() && checkMoveLeft(e)) {
                 moveLeftForEnemy(e);
-               // timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
                 e.setImg((Sprite.movingSprite(Sprite.oneal_left1, Sprite.oneal_left2, Sprite.oneal_left3, timeAnimation, timeRunAnimation)).getFxImage());
-                //findDirection(e);
             }
             if (e.isCheckRight() && checkMoveRight(e)) {
                 moveRightForEnemy(e);
-                //timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
                 e.setImg((Sprite.movingSprite(Sprite.oneal_right1, Sprite.oneal_right2, Sprite.oneal_right3, timeAnimation, timeRunAnimation)).getFxImage());
-                // findDirection(e);
             }
             if (e.isCheckUp() && checkMoveUp(e)) {
                 moveUpForEnemy(e);
-                //timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
                 e.setImg((Sprite.movingSprite(Sprite.oneal_right1, Sprite.oneal_right2, Sprite.oneal_right3, timeAnimation, timeRunAnimation)).getFxImage());
-                //findDirection(e);
             }
             if (e.isCheckDown() && checkMoveDown(e)) {
                 moveDownForEnemy(e);
-                //timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
                 e.setImg((Sprite.movingSprite(Sprite.oneal_left1, Sprite.oneal_left2, Sprite.oneal_left3, timeAnimation, timeRunAnimation)).getFxImage());
-                //findDirection(e);
             }
         }
         else{
@@ -1274,7 +1262,6 @@ public class BombermanGame extends Application {
                     }
                 }
             }
-            //stillObjects.removeIf(e -> e instanceof Brick && ((e.getX() / 32 == i + powerRight && e.getY() / 32 == j) || (e.getX() / 32 == i - powerLeft && e.getY() / 32 == j) || (e.getX() / 32 == i && e.getY() / 32 == j - powerUp) || (e.getX() / 32 == i && e.getY() / 32 == j + powerDown)));
             for (Entity f : stillObjects) {
                 if (f instanceof Grass && ((f.getX() / 32 == i + powerRight && f.getY() / 32 == j) || (f.getX() / 32 == i - powerLeft && f.getY() / 32 == j) || (f.getX() / 32 == i && f.getY() / 32 == j - powerUp) || (f.getX() / 32 == i && f.getY() / 32 == j + powerDown) || f.getX() / 32 == i && f.getY() / 32 == j)) {
                     f.setDeadAnimation(true);
