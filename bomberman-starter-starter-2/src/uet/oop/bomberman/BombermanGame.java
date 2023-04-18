@@ -374,25 +374,29 @@ public class BombermanGame extends Application {
                             stillObjects.removeIf(H -> H instanceof BombItem);
                             listObject[entities.get(0).getX() / 2 + 16][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2 + 16][entities.get(0).getY() / 2] == 4) {
-                           if(enemy.isEmpty()){
-                               primaryStage.setScene(scene3);
-                               primaryStage.show();
-                           }
-                        }
-                        if (listObject[entities.get(0).getX() / 2 - 16][entities.get(0).getY() / 2] == 4) {
+                        if (portalObject[entities.get(0).getX() / 2 + 16][entities.get(0).getY() / 2] == 1) {
+                            System.out.println("Portal");
                             if(enemy.isEmpty()){
                                 primaryStage.setScene(scene3);
                                 primaryStage.show();
                             }
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 16] == 4) {
+                        if (portalObject[entities.get(0).getX() / 2 - 16][entities.get(0).getY() / 2] == 1) {
+                            System.out.println("Portal");
                             if(enemy.isEmpty()){
                                 primaryStage.setScene(scene3);
                                 primaryStage.show();
                             }
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 16] == 4) {
+                        if (portalObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 16] == 1) {
+                            System.out.println("Portal");
+                            if(enemy.isEmpty()){
+                                primaryStage.setScene(scene3);
+                                primaryStage.show();
+                            }
+                        }
+                        if (portalObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 16] == 1) {
+                            System.out.println("Portal");
                             if(enemy.isEmpty()){
                                 primaryStage.setScene(scene3);
                                 primaryStage.show();
