@@ -50,7 +50,9 @@ public class BombermanGame extends Application {
     /**
      * vì mỗi lần enemy chạy 2 pixel
      */
-    public static int[][] listObject = new int[496][208];
+    public static int[][] listObject = new int[9999][9999];
+    public static int[][] portalObject = new int[9999][9999];
+
     /**
      * trong listObject
      * 0: grass
@@ -600,25 +602,29 @@ public class BombermanGame extends Application {
                             stillObjects.removeIf(H -> H instanceof BombItem);
                             listObject[entities.get(0).getX() / 2 + 16][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2 + 16][entities.get(0).getY() / 2] == 4) {
+                        if (portalObject[entities.get(0).getX() / 2 + 16][entities.get(0).getY() / 2] == 1) {
+                            System.out.println("Portal");
                             if(enemy.isEmpty()){
                                 primaryStage.setScene(scene3);
                                 primaryStage.show();
                             }
                         }
-                        if (listObject[entities.get(0).getX() / 2 - 16][entities.get(0).getY() / 2] == 4) {
+                        if (portalObject[entities.get(0).getX() / 2 - 16][entities.get(0).getY() / 2] == 1) {
+                            System.out.println("Portal");
                             if(enemy.isEmpty()){
                                 primaryStage.setScene(scene3);
                                 primaryStage.show();
                             }
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 16] == 4) {
+                        if (portalObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 16] == 1) {
+                            System.out.println("Portal");
                             if(enemy.isEmpty()){
                                 primaryStage.setScene(scene3);
                                 primaryStage.show();
                             }
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 16] == 4) {
+                        if (portalObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 16] == 1) {
+                            System.out.println("Portal");
                             if(enemy.isEmpty()){
                                 primaryStage.setScene(scene3);
                                 primaryStage.show();
@@ -778,6 +784,11 @@ public class BombermanGame extends Application {
                     listObject[i][j] = 0;
                 }
             }
+            for (int i = 0; i < c * 16; i++) {
+                for (int j = 0; j < r * 16; j++) {
+                    portalObject[i][j] = 0;
+                }
+            }
             System.out.println(r);
             System.out.println(c);
             for (int j = 0; j < r; j++) {
@@ -794,14 +805,14 @@ public class BombermanGame extends Application {
                             listObject[i * 16][j * 16] = 0;
                             stillObjects.add(new Brick(i, j, Sprite.brick.getFxImage()));
                             checkMap[i][j] = false;
+                            portalObject[i *16][j *16] = 0;
                             break;
                         case 'x':
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
                             checkMap[i][j] = true;
-                            listObject[i * 16][j * 16] = 0;
                             stillObjects.add(new Portal(i, j, Sprite.portal.getFxImage()));
-                            checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 4;
+                            portalObject[i *16][j *16] = 1;
                             break;
                         case 'p':
                             Entity bomber = new Bomber(i, j, Sprite.player_left.getFxImage());
@@ -809,47 +820,47 @@ public class BombermanGame extends Application {
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
                             checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 0;
+                            portalObject[i *16][j *16] = 0;
                             entities.add(bomber);
-                            checkMap[i][j] = true;
                             break;
                         case '1':
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
                             checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 0;
+                            portalObject[i *16][j *16] = 0;
                             enemy.add(new Balloom(i, j, Sprite.balloom_left1.getFxImage()));
-                            checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 1;
                             break;
                         case '2':
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
                             checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 0;
+                            portalObject[i *16][j *16] = 0;
                             enemy.add(new Oneal(i, j, Sprite.oneal_right1.getFxImage()));
-                            checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 1;
                             break;
                         case 'b':
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
                             checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 0;
+                            portalObject[i *16][j *16] = 0;
                             stillObjects.add(new BombItem(i, j, Sprite.powerup_bombs.getFxImage()));
-                            checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 6;
                             break;
                         case 'f':
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
                             checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 0;
+                            portalObject[i *16][j *16] = 0;
                             stillObjects.add(new FlameItem(i, j, Sprite.powerup_flames.getFxImage()));
-                            checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 3;
                             break;
                         case 's':
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
                             checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 0;
+                            portalObject[i *16][j *16] = 0;
                             stillObjects.add(new speedItem(i, j, Sprite.powerup_speed.getFxImage()));
-                            checkMap[i][j] = true;
                             listObject[i * 16][j * 16] = 2;
                             break;
                     }
@@ -962,25 +973,25 @@ public class BombermanGame extends Application {
             }
             if (e.isCheckLeft() && checkMoveLeft(e)) {
                 moveLeftForEnemy(e);
-                timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
+               // timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
                 e.setImg((Sprite.movingSprite(Sprite.oneal_left1, Sprite.oneal_left2, Sprite.oneal_left3, timeAnimation, timeRunAnimation)).getFxImage());
                 //findDirection(e);
             }
             if (e.isCheckRight() && checkMoveRight(e)) {
                 moveRightForEnemy(e);
-                timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
+                //timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
                 e.setImg((Sprite.movingSprite(Sprite.oneal_right1, Sprite.oneal_right2, Sprite.oneal_right3, timeAnimation, timeRunAnimation)).getFxImage());
                 // findDirection(e);
             }
             if (e.isCheckUp() && checkMoveUp(e)) {
                 moveUpForEnemy(e);
-                timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
+                //timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
                 e.setImg((Sprite.movingSprite(Sprite.oneal_right1, Sprite.oneal_right2, Sprite.oneal_right3, timeAnimation, timeRunAnimation)).getFxImage());
                 //findDirection(e);
             }
             if (e.isCheckDown() && checkMoveDown(e)) {
                 moveDownForEnemy(e);
-                timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
+                //timeAnimation = (timeAnimation > MAX_TIME_ANIMATION) ? 0 : timeAnimation + 1;
                 e.setImg((Sprite.movingSprite(Sprite.oneal_left1, Sprite.oneal_left2, Sprite.oneal_left3, timeAnimation, timeRunAnimation)).getFxImage());
                 //findDirection(e);
             }

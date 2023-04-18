@@ -15,7 +15,7 @@ public abstract class Entity {
     protected int y;
 
     protected Image img;
-    protected String name;
+
     protected boolean isAlive = true;
     protected boolean DeadAnimation = false;
     protected boolean checkLeft = true;
@@ -106,12 +106,6 @@ public abstract class Entity {
     }
     public void setImg(Image img) {
         this.img = img;
-    }
-    public void setName(String name ){
-        this.name = name;
-    }
-    public String  getName(){
-        return this.name;
     }
     public  boolean getIsAlive(){
         return this.isAlive;
