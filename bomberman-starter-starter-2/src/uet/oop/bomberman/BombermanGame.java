@@ -744,30 +744,32 @@ public class BombermanGame extends Application {
                 primaryBomber.setDeadAnimation(true);
             }
             for (Entity e : enemy) {
-                if (bomber.getX() + 28 >= e.getX() && bomber.getX() < e.getX() && bomber.getY() == e.getY()) {
-                    primaryBomber.setDeadAnimation(true);
-                }
-                if (bomber.getX() - 28 <= e.getX() && bomber.getX() > e.getX() && bomber.getY() == e.getY()) {
-                    primaryBomber.setDeadAnimation(true);
-                }
-                if (bomber.getY() + 28 >= e.getY() && bomber.getY() < e.getY() && bomber.getX() == e.getX()) {
-                    primaryBomber.setDeadAnimation(true);
-                }
-                if (bomber.getY() - 28 <= e.getY() && bomber.getY() > e.getY() && bomber.getX() == e.getX()) {
-                    primaryBomber.setDeadAnimation(true);
-                }
-                if (bomber.getX() >= e.getX() && bomber.getY() >= e.getY() && bomber.getX() - 28 <= e.getX() && bomber.getY() - 28 <= e.getY()) {
-                    primaryBomber.setDeadAnimation(true);
-                }
-                if (bomber.getX() <= e.getX() && bomber.getY() >= e.getY() && bomber.getX() + 28 >= e.getX() && bomber.getY() - 28 <= e.getY()) {
-                    primaryBomber.setDeadAnimation(true);
-                }
+                if (e.getIsAlive()) {
+                    if (bomber.getX() + 28 >= e.getX() && bomber.getX() < e.getX() && bomber.getY() == e.getY()) {
+                        primaryBomber.setDeadAnimation(true);
+                    }
+                    if (bomber.getX() - 28 <= e.getX() && bomber.getX() > e.getX() && bomber.getY() == e.getY()) {
+                        primaryBomber.setDeadAnimation(true);
+                    }
+                    if (bomber.getY() + 28 >= e.getY() && bomber.getY() < e.getY() && bomber.getX() == e.getX()) {
+                        primaryBomber.setDeadAnimation(true);
+                    }
+                    if (bomber.getY() - 28 <= e.getY() && bomber.getY() > e.getY() && bomber.getX() == e.getX()) {
+                        primaryBomber.setDeadAnimation(true);
+                    }
+                    if (bomber.getX() >= e.getX() && bomber.getY() >= e.getY() && bomber.getX() - 28 <= e.getX() && bomber.getY() - 28 <= e.getY()) {
+                        primaryBomber.setDeadAnimation(true);
+                    }
+                    if (bomber.getX() <= e.getX() && bomber.getY() >= e.getY() && bomber.getX() + 28 >= e.getX() && bomber.getY() - 28 <= e.getY()) {
+                        primaryBomber.setDeadAnimation(true);
+                    }
 
-                if (bomber.getX() >= e.getX() && bomber.getY() <= e.getY() && bomber.getX() - 28 <= e.getX() && bomber.getY() + 28 >= e.getY()) {
-                    primaryBomber.setDeadAnimation(true);
-                }
-                if (bomber.getX() <= e.getY() && bomber.getY() <= e.getY() && bomber.getX() + 28 >= e.getX() && bomber.getY() + 28 >= e.getY()) {
-                    primaryBomber.setDeadAnimation(true);
+                    if (bomber.getX() >= e.getX() && bomber.getY() <= e.getY() && bomber.getX() - 28 <= e.getX() && bomber.getY() + 28 >= e.getY()) {
+                        primaryBomber.setDeadAnimation(true);
+                    }
+                    if (bomber.getX() <= e.getY() && bomber.getY() <= e.getY() && bomber.getX() + 28 >= e.getX() && bomber.getY() + 28 >= e.getY()) {
+                        primaryBomber.setDeadAnimation(true);
+                    }
                 }
             }
 
@@ -1420,6 +1422,7 @@ public class BombermanGame extends Application {
 
     public void updateEnemy(Entity e) {
         if (!e.getIsAlive()) {
+            listObject[e.getX() / 2][e.getY() / 2] = 0;
             enemy.remove(e);
         }
     }
