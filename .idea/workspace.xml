@@ -4,47 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee1adc46-0a7e-4fce-a23c-89685e9d23cb" name="Changes" comment="sửa lại các item">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="f1b3c713-db12-44a2-962e-9487979b00c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bomberman-starter-starter-2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bomberman-starter-starter-2/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-      <option value="module" />
-    </option>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaFXApplication" />
-        <option value="CSS File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="a1fca1aa-4525-40a2-b0da-404a314d7571" />
-        <option name="url" value="https://github.com/VuThanhDat14122004/BaiTT.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/bomberman-starter-starter-2/src/uet/oop/bomberman/BombermanGame.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,83 +32,20 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2MtWZJoFRPQXh6Mkk3XZrNp3Hrj" />
+  <component name="ProjectId" id="2OiOD0oXfBSvEFnTFSuhzbszv48" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/Documents/Downloads/bomberman-starter-starter-2_DANH_CHO_BAI_TAP_BIG&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="uet.oop.bomberman.entities" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pc\Documents\Downloads\bomberman-starter-starter-2_DANH_CHO_BAI_TAP_BIG" />
-      <recent name="C:\Users\pc\Documents\Downloads\bomberman-starter-starter-2_DANH_CHO_BAI_TAP_BIG\bomberman-starter-starter-2\src\uet\oop\bomberman\graphics" />
-      <recent name="C:\Users\pc\Documents\Downloads\bomberman-starter-starter-2_DANH_CHO_BAI_TAP_BIG\bomberman-starter-starter-2\src\uet\oop\bomberman" />
-      <recent name="C:\Users\pc\Documents\Downloads\bomberman-starter-starter-2_DANH_CHO_BAI_TAP_BIG\bomberman-starter-starter-2\res\sprites" />
-    </key>
-  </component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="BombermanGame" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="uet.oop.bomberman.BombermanGame" />
-      <module name="bomberman" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\pc\Downloads\openjfx-19.0.2.1_windows-x64_bin-sdk\javafx-sdk-19.0.2.1\lib&quot; --add-modules=javafx.controls,javafx.fxml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uet.oop.bomberman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BombermanGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="uet.oop.bomberman.BombermanGame" />
-      <module name="bomberman" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\pc\Downloads\openjfx-19.0.2.1_windows-x64_bin-sdk\javafx-sdk-19.0.2.1\lib&quot; --add-modules=javafx.controls,javafx.fxml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uet.oop.bomberman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BombermanGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="uet.oop.bomberman.BombermanGame" />
-      <module name="bomberman" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\pc\Downloads\openjfx-19.0.2.1_windows-x64_bin-sdk\javafx-sdk-19.0.2.1\lib&quot; --add-modules=javafx.controls,javafx.fxml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uet.oop.bomberman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BombermanGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uet.oop.bomberman.BombermanGame" />
       <module name="bomberman" />
@@ -150,381 +63,22 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BombermanGame" />
-        <item itemvalue="Application.BombermanGame" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ee1adc46-0a7e-4fce-a23c-89685e9d23cb" name="Changes" comment="" />
-      <created>1678587412868</created>
+      <changelist id="f1b3c713-db12-44a2-962e-9487979b00c8" name="Changes" comment="" />
+      <created>1682039827511</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678587412868</updated>
-      <workItem from="1678587413938" duration="4280000" />
-      <workItem from="1678667330837" duration="93000" />
-      <workItem from="1678667435688" duration="521000" />
-      <workItem from="1678668186605" duration="752000" />
-      <workItem from="1678669005522" duration="35000" />
-      <workItem from="1678669850381" duration="116000" />
-      <workItem from="1678670034525" duration="1157000" />
-      <workItem from="1678673301577" duration="607000" />
-      <workItem from="1678695156806" duration="2711000" />
-      <workItem from="1678698117574" duration="790000" />
-      <workItem from="1678699032668" duration="280000" />
-      <workItem from="1678712298296" duration="2467000" />
-      <workItem from="1678751134809" duration="2325000" />
-      <workItem from="1678779927169" duration="2482000" />
-      <workItem from="1678782596243" duration="1398000" />
-      <workItem from="1678785708731" duration="121000" />
-      <workItem from="1678787207842" duration="189000" />
-      <workItem from="1678796385643" duration="1154000" />
-      <workItem from="1678799454014" duration="79000" />
-      <workItem from="1678801095587" duration="9000" />
-      <workItem from="1678837647452" duration="11967000" />
-      <workItem from="1678849697091" duration="1929000" />
-      <workItem from="1678866294322" duration="5073000" />
-      <workItem from="1678871461751" duration="107000" />
-      <workItem from="1678872006602" duration="161000" />
-      <workItem from="1678889808870" duration="667000" />
-      <workItem from="1678927733357" duration="3764000" />
-      <workItem from="1678936111433" duration="118000" />
-      <workItem from="1678938048979" duration="174000" />
-      <workItem from="1678939932071" duration="710000" />
-      <workItem from="1678945284019" duration="394000" />
-      <workItem from="1678947023107" duration="459000" />
-      <workItem from="1678953489200" duration="392000" />
-      <workItem from="1678974639707" duration="27000" />
-      <workItem from="1678974740553" duration="18000" />
-      <workItem from="1678979180075" duration="167000" />
-      <workItem from="1678979703638" duration="440000" />
-      <workItem from="1679017498342" duration="695000" />
-      <workItem from="1679018351958" duration="27000" />
-      <workItem from="1679020296814" duration="3204000" />
-      <workItem from="1679023580125" duration="1360000" />
-      <workItem from="1679059751036" duration="4504000" />
-      <workItem from="1679109804492" duration="1223000" />
-      <workItem from="1679144742061" duration="7377000" />
-      <workItem from="1679185740924" duration="228000" />
-      <workItem from="1679186892619" duration="8848000" />
-      <workItem from="1679209181120" duration="2393000" />
-      <workItem from="1679233946416" duration="77000" />
-      <workItem from="1679234787829" duration="258000" />
-      <workItem from="1679299465541" duration="3419000" />
-      <workItem from="1679303010117" duration="657000" />
-      <workItem from="1679328645552" duration="753000" />
-      <workItem from="1679382256644" duration="814000" />
-      <workItem from="1679472067814" duration="6245000" />
-      <workItem from="1679533988275" duration="3708000" />
-      <workItem from="1679539900870" duration="3947000" />
-      <workItem from="1679551886460" duration="108000" />
-      <workItem from="1679552070785" duration="11826000" />
-      <workItem from="1679739928782" duration="3333000" />
-      <workItem from="1679789411951" duration="12828000" />
-      <workItem from="1679836003987" duration="1508000" />
-      <workItem from="1679904752413" duration="40000" />
-      <workItem from="1679920914859" duration="509000" />
-      <workItem from="1679969200942" duration="3331000" />
-      <workItem from="1679989030169" duration="2372000" />
-      <workItem from="1679991429679" duration="4783000" />
-      <workItem from="1679996517808" duration="881000" />
-      <workItem from="1680011288765" duration="6754000" />
-      <workItem from="1680509486178" duration="1114000" />
-      <workItem from="1680525658374" duration="1722000" />
-      <workItem from="1680566118727" duration="738000" />
-      <workItem from="1680592339475" duration="9739000" />
-      <workItem from="1680610629976" duration="15975000" />
-      <workItem from="1680655206597" duration="10342000" />
-      <workItem from="1680681028251" duration="3226000" />
-      <workItem from="1680700260296" duration="4665000" />
-      <workItem from="1680744676941" duration="2740000" />
-      <workItem from="1680749804474" duration="5106000" />
-      <workItem from="1680784710004" duration="6963000" />
-      <workItem from="1680880523647" duration="540000" />
-      <workItem from="1680997213481" duration="6387000" />
-      <workItem from="1681006751407" duration="287000" />
-      <workItem from="1681033411921" duration="2348000" />
-      <workItem from="1681092228673" duration="3757000" />
-      <workItem from="1681113403149" duration="3810000" />
-      <workItem from="1681136995611" duration="1727000" />
-      <workItem from="1681179996498" duration="3578000" />
-      <workItem from="1681199023582" duration="1328000" />
-      <workItem from="1681258196588" duration="8631000" />
-      <workItem from="1681268990860" duration="455000" />
-      <workItem from="1681286203835" duration="5521000" />
-      <workItem from="1681304381438" duration="7233000" />
-      <workItem from="1681313636083" duration="11000" />
-      <workItem from="1681347458394" duration="2242000" />
-      <workItem from="1681354536111" duration="6740000" />
-      <workItem from="1681367092576" duration="2786000" />
-      <workItem from="1681528112793" duration="18000" />
-      <workItem from="1681528154688" duration="412000" />
-      <workItem from="1681564999072" duration="229000" />
-      <workItem from="1681608162027" duration="1088000" />
-      <workItem from="1681715144222" duration="5374000" />
-      <workItem from="1681723595381" duration="400000" />
-      <workItem from="1681724565657" duration="261000" />
-      <workItem from="1681785458588" duration="3939000" />
-      <workItem from="1681800663108" duration="2116000" />
-      <workItem from="1681869376377" duration="1835000" />
-      <workItem from="1681886958116" duration="2033000" />
-      <workItem from="1681912033114" duration="576000" />
-      <workItem from="1681953687599" duration="3574000" />
-      <workItem from="1681970484026" duration="6669000" />
-      <workItem from="1682036471120" duration="2841000" />
+      <updated>1682039827511</updated>
+      <workItem from="1682039834841" duration="300000" />
     </task>
-    <task id="LOCAL-00001" summary="thêm hiệu ứng die cho balloom, oneal.">
-      <created>1680880807446</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1680880807446</updated>
-    </task>
-    <task id="LOCAL-00002" summary="thêm hiệu ứng die cho balloom, oneal.">
-      <created>1680880834716</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1680880834716</updated>
-    </task>
-    <task id="LOCAL-00003" summary="thêm hiệu ứng die cho balloom, oneal.">
-      <created>1680880868070</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680880868070</updated>
-    </task>
-    <task id="LOCAL-00004" summary="thêm hiệu ứng nổ cho bomb và gạch lần 1.">
-      <created>1680999447990</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1680999447990</updated>
-    </task>
-    <task id="LOCAL-00005" summary="thêm hiệu ứng nổ cho bomb và gạch lần 2.">
-      <created>1681003531361</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1681003531361</updated>
-    </task>
-    <task id="LOCAL-00006" summary="thêm hiệu ứng dead cho bomber.">
-      <created>1681035354913</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1681035354914</updated>
-    </task>
-    <task id="LOCAL-00007" summary="chỉnh lại hiệu ứng nổ cho bomb.">
-      <created>1681096272783</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1681096272783</updated>
-    </task>
-    <task id="LOCAL-00008" summary="xử lí bombItem lần 1">
-      <created>1681137088779</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1681137088779</updated>
-    </task>
-    <task id="LOCAL-00009" summary="xử lí bombItem lần 2">
-      <created>1681138479705</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1681138479705</updated>
-    </task>
-    <task id="LOCAL-00010" summary="đọc map bằng file lần 1.">
-      <created>1681260074809</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1681260074809</updated>
-    </task>
-    <task id="LOCAL-00011" summary="xử lí bomber đi vào vị trí speedItem.">
-      <created>1681261980214</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1681261980214</updated>
-    </task>
-    <task id="LOCAL-00012" summary="xử lí đọc map bằng file lần 2.">
-      <created>1681287301796</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1681287301796</updated>
-    </task>
-    <task id="LOCAL-00013" summary="xử lí đọc map bằng file lần 3.">
-      <created>1681287492392</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1681287492392</updated>
-    </task>
-    <task id="LOCAL-00014" summary="xử lí enemy chạy lần???.">
-      <created>1681289963238</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1681289963238</updated>
-    </task>
-    <task id="LOCAL-00015" summary="xử lí tìm đường cho oneal lần 1.">
-      <created>1681348844750</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1681348844750</updated>
-    </task>
-    <task id="LOCAL-00016" summary="xử lí tìm đường cho oneal lần 2.">
-      <created>1681357706890</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1681357706890</updated>
-    </task>
-    <task id="LOCAL-00017" summary="thêm menu victory khi thắng màn chơi.">
-      <created>1681392944135</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1681392944135</updated>
-    </task>
-    <task id="LOCAL-00018" summary="thêm cây thừa kế.">
-      <created>1681716300075</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1681716300075</updated>
-    </task>
-    <task id="LOCAL-00019" summary="diagram">
-      <created>1681717966318</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1681717966318</updated>
-    </task>
-    <task id="LOCAL-00020" summary="sua loi bomber di vao vi tri portal">
-      <created>1681789325296</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1681789325296</updated>
-    </task>
-    <task id="LOCAL-00021" summary="sua loi bomber di vao vi tri portal v2">
-      <created>1681801384489</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1681801384489</updated>
-    </task>
-    <task id="LOCAL-00022" summary="sua loi bomber di vao vi tri portal v3">
-      <created>1681802356502</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1681802356502</updated>
-    </task>
-    <task id="LOCAL-00023" summary="clear code">
-      <created>1681802519173</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1681802519173</updated>
-    </task>
-    <task id="LOCAL-00024" summary="sửa lỗi va chạm cho bomber vs enemy">
-      <created>1681888306495</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1681888306495</updated>
-    </task>
-    <task id="LOCAL-00025" summary="sửa lại diagram">
-      <created>1681888657423</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1681888657423</updated>
-    </task>
-    <task id="LOCAL-00026" summary="sửa lại diagram">
-      <created>1681888675178</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1681888675178</updated>
-    </task>
-    <task id="LOCAL-00027" summary="sửa lại diagram2">
-      <created>1681888877192</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1681888877192</updated>
-    </task>
-    <task id="LOCAL-00028" summary="sửa lại các item">
-      <created>1682039105447</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1682039105447</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="thêm hiệu ứng nổ cho bomb và gạch lần 1." />
-    <MESSAGE value="thêm hiệu ứng nổ cho bomb và gạch lần 2." />
-    <MESSAGE value="thêm hiệu ứng dead cho bomber." />
-    <MESSAGE value="chỉnh lại hiệu ứng nổ cho bomb." />
-    <MESSAGE value="xử lí bombItem lần 1" />
-    <MESSAGE value="xử lí bombItem lần 2" />
-    <MESSAGE value="đọc map bằng file lần 1." />
-    <MESSAGE value="xử lí bomber đi vào vị trí speedItem." />
-    <MESSAGE value="xử lí đọc map bằng file lần 2." />
-    <MESSAGE value="xử lí đọc map bằng file lần 3." />
-    <MESSAGE value="xử lí enemy chạy lần???." />
-    <MESSAGE value="xử lí tìm đường cho oneal lần 1." />
-    <MESSAGE value="xử lí tìm đường cho oneal lần 2." />
-    <MESSAGE value="thêm menu victory khi thắng màn chơi." />
-    <MESSAGE value="thêm cây thừa kế." />
-    <MESSAGE value="diagram" />
-    <MESSAGE value="diagram2" />
-    <MESSAGE value="sua loi bomber di vao vi tri portal" />
-    <MESSAGE value="sua loi bomber di vao vi tri portal v2" />
-    <MESSAGE value="sua loi bomber di vao vi tri portal v3" />
-    <MESSAGE value="clear code" />
-    <MESSAGE value="sửa lỗi va chạm cho bomber vs enemy" />
-    <MESSAGE value="sửa lại diagram" />
-    <MESSAGE value="sửa lại diagram2" />
-    <MESSAGE value="sửa lại các item" />
-    <option name="LAST_COMMIT_MESSAGE" value="sửa lại các item" />
-  </component>
-  <component name="XDebuggerManager">
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="java.util.ArrayList$Itr" memberName="this$0" />
-      </pinned-members>
-    </pin-to-top-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bomberman_starter_starter_2_DANH_CHO_BAI_TAP_BIG$BombermanGame.ic" NAME="BombermanGame Coverage Results" MODIFIED="1681801978407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>uet.oop.bomberman.*</FILTER>
-    </SUITE>
   </component>
 </project>
