@@ -279,7 +279,7 @@ public class BombermanGame extends Application {
                     exploreBomb();
                     setMoveBomber(entities.get(0));
                     if (entities.get(0).getX() % 2 == 0 && entities.get(0).getY() % 2 == 0) {
-                        if (listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] == 3) {
+                        if (flameObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] == 1) {
                             powerUp = 2;
                             powerDown = 2;
                             powerLeft = 2;
@@ -293,9 +293,9 @@ public class BombermanGame extends Application {
                             powerLeftE = 2;
                             powerRightE = 2;
                             stillObjects.removeIf(H -> H instanceof FlameItem);
-                            listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
+                            flameObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2 - 8][entities.get(0).getY() / 2] == 3) {
+                        if (flameObject[entities.get(0).getX() / 2 - 8][entities.get(0).getY() / 2] == 1) {
                             powerUp = 2;
                             powerDown = 2;
                             powerLeft = 2;
@@ -309,9 +309,9 @@ public class BombermanGame extends Application {
                             powerLeftE = 2;
                             powerRightE = 2;
                             stillObjects.removeIf(H -> H instanceof FlameItem);
-                            listObject[entities.get(0).getX() / 2 - 8][entities.get(0).getY() / 2] = 0;
+                            flameObject[entities.get(0).getX() / 2 - 8][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 8] == 3) {
+                        if (flameObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 8] == 1) {
                             powerUp = 2;
                             powerDown = 2;
                             powerLeft = 2;
@@ -325,9 +325,9 @@ public class BombermanGame extends Application {
                             powerLeftE = 2;
                             powerRightE = 2;
                             stillObjects.removeIf(H -> H instanceof FlameItem);
-                            listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 8] = 0;
+                            flameObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 8] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 8] == 3) {
+                        if (flameObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 8] == 1) {
                             powerUp = 2;
                             powerDown = 2;
                             powerLeft = 2;
@@ -341,47 +341,47 @@ public class BombermanGame extends Application {
                             powerLeftE = 2;
                             powerRightE = 2;
                             stillObjects.removeIf(H -> H instanceof FlameItem);
-                            listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 8] = 0;
+                            flameObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 8] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] == 2) {
+                        if (speedObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] == 1) {
                             move = 128;
                             stillObjects.removeIf(H -> H instanceof speedItem);
-                            listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
+                            speedObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2 - 8][entities.get(0).getY() / 2] == 2) {
+                        if (speedObject[entities.get(0).getX() / 2 - 8][entities.get(0).getY() / 2] == 1) {
                             move = 128;
                             stillObjects.removeIf(H -> H instanceof speedItem);
-                            listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
+                            speedObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 8] == 2) {
+                        if (speedObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 8] == 1) {
                             move = 128;
                             stillObjects.removeIf(H -> H instanceof speedItem);
-                            listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
+                            speedObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 8] == 2) {
+                        if (speedObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 8] == 1) {
                             move = 128;
                             stillObjects.removeIf(H -> H instanceof speedItem);
-                            listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
+                            speedObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] == 6) {
+                        if (bombObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] == 1) {
                             maxBomb = 2;
                             stillObjects.removeIf(H -> H instanceof BombItem);
-                            listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
+                            bombObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2 - 8][entities.get(0).getY() / 2] == 6) {
+                        if (bombObject[entities.get(0).getX() / 2 - 8][entities.get(0).getY() / 2] == 1) {
                             maxBomb = 2;
                             stillObjects.removeIf(H -> H instanceof BombItem);
-                            listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
+                            bombObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 8] == 6) {
+                        if (bombObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 + 8] == 1) {
                             maxBomb = 2;
                             stillObjects.removeIf(H -> H instanceof BombItem);
-                            listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
+                            bombObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
                         }
-                        if (listObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 8] == 6) {
+                        if (bombObject[entities.get(0).getX() / 2][entities.get(0).getY() / 2 - 8] == 1) {
                             maxBomb = 2;
                             stillObjects.removeIf(H -> H instanceof BombItem);
-                            listObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
+                            bombObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] = 0;
                         }
                         if (portalObject[entities.get(0).getX() / 2 + 8][entities.get(0).getY() / 2] == 1) {
                             System.out.println("Portal");
@@ -733,6 +733,13 @@ public class BombermanGame extends Application {
         for (int i = 0; i < 496; i++) {
             for (int j = 0; j < 208; j++) {
                 listObject[i][j] = 0;
+            }
+        }
+        for(int i = 0;i < 9999;i++){
+            for(int j = 0;j < 9999;j++){
+                flameObject[i][j] = 0;
+                speedObject[i][j] = 0;
+                bombObject[i][j] = 0;
             }
         }
     }
