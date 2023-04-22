@@ -8,7 +8,7 @@ import javax.swing.*;
 
 public class Bomb extends Entity {
 
-    private static int MAX_TIME_ANIMATION = 19000;
+    private static int MAX_TIME_ANIMATION = 2000;
     private static double timeAnimationBomb = 0;
     private static int timeRunAnimationBomb = 3;
     private double timeExplore = 4;

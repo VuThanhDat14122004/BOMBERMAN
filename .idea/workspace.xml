@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1b3c713-db12-44a2-962e-9487979b00c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bomberman-starter-starter-2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bomberman-starter-starter-2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bomberman-starter-starter-2/res/levels/Level1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bomberman-starter-starter-2/res/levels/Level1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bomberman-starter-starter-2/src/uet/oop/bomberman/BombermanGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/bomberman-starter-starter-2/src/uet/oop/bomberman/BombermanGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bomberman-starter-starter-2/src/uet/oop/bomberman/entities/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/bomberman-starter-starter-2/src/uet/oop/bomberman/entities/Bomb.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,15 +34,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/Documents/Downloads/bomberman-starter-starter-2_DANH_CHO_BAI_TAP_BIG&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Documents\Downloads\bomberman-starter-starter-2_DANH_CHO_BAI_TAP_BIG" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Documents\Downloads\bomberman-starter-starter-2_DANH_CHO_BAI_TAP_BIG\bomberman-starter-starter-2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BombermanGame">
+    <configuration name="BombermanGame (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="uet.oop.bomberman.BombermanGame" />
+      <module name="bomberman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uet.oop.bomberman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BombermanGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uet.oop.bomberman.BombermanGame" />
       <module name="bomberman" />
@@ -63,6 +86,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BombermanGame" />
+        <item itemvalue="Application.BombermanGame (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -74,11 +98,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682039827511</updated>
-      <workItem from="1682039834841" duration="300000" />
+      <workItem from="1682039834841" duration="1106000" />
+      <workItem from="1682083258436" duration="2070000" />
+      <workItem from="1682086840162" duration="18000" />
+      <workItem from="1682118092861" duration="875000" />
+      <workItem from="1682132373308" duration="6223000" />
+      <workItem from="1682146041730" duration="1857000" />
     </task>
+    <task id="LOCAL-00001" summary="sửa lại cái file lần 2.">
+      <created>1682040224419</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682040224419</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sửa lại diagram">
+      <created>1682040523656</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682040523656</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sửa lại cái file lần 2." />
+    <MESSAGE value="sửa lại diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="sửa lại diagram" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

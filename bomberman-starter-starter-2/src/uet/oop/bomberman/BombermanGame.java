@@ -55,9 +55,11 @@ public class BombermanGame extends Application {
     public static int[][] portalObject = new int[9999][9999];
     public static int[][] flameObject = new int[9999][9999];
     public static int[][] speedObject = new int[9999][9999];
-    public static int [][] bombObject = new int [9999][9999];
+    public static int[][] bombObject = new int[9999][9999];
     public static final int[] dx = {-1, 0, 1, 0};
     public static final int[] dy = {0, 1, 0, -1};
+    double time = 0;
+    double maxTime = 6000;
 
     /**
      * trong listObject
@@ -885,7 +887,7 @@ public class BombermanGame extends Application {
                             speedObject[i * 16][j * 16] = 0;
                             flameObject[i * 16][j * 16] = 0;
                             bombObject[i * 16][j * 16] = 1;
-                            matrix[i][j] = 0;
+                            matrix[i][j] = 1;
                             break;
                         case 'f':
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
@@ -899,7 +901,7 @@ public class BombermanGame extends Application {
                             speedObject[i * 16][j * 16] = 0;
                             flameObject[i * 16][j * 16] = 1;
                             bombObject[i * 16][j * 16] = 0;
-                            matrix[i][j] = 0;
+                            matrix[i][j] = 1;
                             break;
                         case 's':
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
@@ -913,7 +915,7 @@ public class BombermanGame extends Application {
                             speedObject[i * 16][j * 16] = 1;
                             flameObject[i * 16][j * 16] = 0;
                             bombObject[i * 16][j * 16] = 0;
-                            matrix[i][j] = 0;
+                            matrix[i][j] = 1;
                             break;
                     }
                     if (s.charAt(i) != '#' && s.charAt(i) != '*' && s.charAt(i) != 'x' && s.charAt(i) != 'p' && s.charAt(i) != '1' && s.charAt(i) != '2' && s.charAt(i) != 'b' && s.charAt(i) != 'f' && s.charAt(i) != 's') {
@@ -934,13 +936,17 @@ public class BombermanGame extends Application {
             System.out.println(e);
         }
     }
+
     public void findDirection(Entity e) {
-        int matrix1[][] = new int [WIDTH][HEIGHT];
-        for(int i = 0;i<WIDTH;i++){
-            for(int j = 0;j < HEIGHT ;j++){
+        int sizebomb = Bomb.size();
+
+        int matrix1[][] = new int[WIDTH][HEIGHT];
+        for (int i = 0; i < WIDTH; i++) {
+            for (int j = 0; j < HEIGHT; j++) {
                 matrix1[i][j] = matrix[i][j];
             }
         }
+
         Stack<String> st = shortestPath(matrix1, e.getX() / 32, e.getY() / 32, primaryBomber.getX() / 32, primaryBomber.getY() / 32);
         if (!e.getDeadAnimation() && e.getIsAlive()) {
             if (st.empty()) {
@@ -948,64 +954,65 @@ public class BombermanGame extends Application {
             } else {
                 while (!st.isEmpty()) {
                     String dir = st.pop();
-                    if (e.getX()%32 == 0 && e.getY() % 32 == 0) {
-                        switch (dir) {
+                    System.out.print(dir);
+                    System.out.print(" ");
+                       /* switch (dir) {
                             case "LEFT":
-                                e.setCheckLeft(true);
-                                e.setCheckDown(false);
-                                e.setCheckUp(false);
-                                e.setCheckRight(false);
+                                do {
+                                    if(checkMoveLeft(e)) {
+
+                                        moveLeftForEnemy(e);
+                                        time = 0;
+                                    }
+                                }
+                                while (e.getX() % 32 != 0 || e.getY() % 32 != 0);
                                 break;
                             case "RIGHT":
-                                e.setCheckRight(true);
-                                e.setCheckDown(false);
-                                e.setCheckUp(false);
-                                e.setCheckLeft(false);
+
+                                do {
+                                    if(checkMoveRight(e)) {
+
+                                        moveRightForEnemy(e);
+                                        time = 0;
+                                    }
+                                }
+                                while (e.getX() % 32 != 0 || e.getY() % 32 != 0);
                                 break;
                             case "UP":
-                                e.setCheckUp(true);
-                                e.setCheckLeft(false);
-                                e.setCheckDown(false);
-                                e.setCheckRight(false);
+                                do {
+                                    if(checkMoveUp(e)) {
+
+                                        moveUpForEnemy(e);
+                                        time = 0;
+                                    }
+                                }
+                                while (e.getX() % 32 != 0 || e.getY() % 32 != 0);
                                 break;
                             case "DOWN":
-                                e.setCheckDown(true);
-                                e.setCheckUp(false);
-                                e.setCheckRight(false);
-                                e.setCheckLeft(false);
+                                do {
+                                    if(checkMoveDown(e)) {
+
+                                        moveDownForEnemy(e);
+                                        time = 0;
+                                    }
+                                }
+                                while (e.getX() % 32 != 0 || e.getY() % 32 != 0);
                                 break;
-                        }
-                        if (e.isCheckLeft() && checkMoveLeft(e)) {
-                            moveLeftForEnemy(e);
-                        }  if (e.isCheckRight() && checkMoveRight(e)) {
-                            moveRightForEnemy(e);
-                        }  if (e.isCheckUp() && checkMoveUp(e)) {
-                            moveUpForEnemy(e);
-                        }  if (e.isCheckDown() && checkMoveDown(e)) {
-                            moveDownForEnemy(e);
-                        }
-                    }
-                    else{
-                        if (e.isCheckLeft() && checkMoveLeft(e)) {
-                            moveLeftForEnemy(e);
-                        } else if (e.isCheckRight() && checkMoveRight(e)) {
-                            moveRightForEnemy(e);
-                        } else if (e.isCheckUp() && checkMoveUp(e)) {
-                            moveUpForEnemy(e);
-                        } else if (e.isCheckDown() && checkMoveDown(e)) {
-                            moveDownForEnemy(e);
-                        }
-                    }
+                        }*/
+
                 }
-
             }
-
+            System.out.println();
         } else {
             e.setDeadAnimation(true);
             e.update();
             updateEnemy(e);
         }
+
+
     }
+
+
     public static Stack<String> shortestPath(int[][] matrix, int i, int j, int u, int v) {
         int rows = matrix.length;
         int cols = matrix[0].length;
@@ -1112,6 +1119,7 @@ public class BombermanGame extends Application {
                 e.update();
                 if (!e.getIsAlive()) {
                     stillObjects.remove(e);
+                    matrix[e.getX() / 32][e.getY() / 32] = 0;
                 }
             }
         }
@@ -1365,6 +1373,7 @@ public class BombermanGame extends Application {
             for (Entity f : stillObjects) {
                 if (f instanceof Brick && ((f.getX() / 32 == i + powerRight && f.getY() / 32 == j) || (f.getX() / 32 == i - powerLeft && f.getY() / 32 == j) || (f.getX() / 32 == i && f.getY() / 32 == j - powerUp) || (f.getX() / 32 == i && f.getY() / 32 == j + powerDown))) {
                     f.setDeadAnimation(true);
+                    matrix[f.getX() / 32][f.getY() / 32] = 0;
                 }
             }
 
@@ -1374,18 +1383,22 @@ public class BombermanGame extends Application {
                     if (e.getX() / 32 == i + powerRight && e.getY() / 32 == j) {
                         checkMap[e.getX() / 32][e.getY() / 32] = true;
                         listObject[e.getX() / 2][e.getY() / 2] = 0;
+                        matrix[e.getX() / 32][e.getY() / 32] = 0;
                     }
                     if (e.getX() / 32 == i - powerLeft && e.getY() / 32 == j) {
                         checkMap[e.getX() / 32][e.getY() / 32] = true;
                         listObject[e.getX() / 2][e.getY() / 2] = 0;
+                        matrix[e.getX() / 32][e.getY() / 32] = 0;
                     }
                     if (e.getX() / 32 == i && e.getY() / 32 == j - powerUp) {
                         checkMap[e.getX() / 32][e.getY() / 32] = true;
                         listObject[e.getX() / 2][e.getY() / 2] = 0;
+                        matrix[e.getX() / 32][e.getY() / 32] = 0;
                     }
                     if (e.getX() / 32 == i && e.getY() / 32 == j + powerDown) {
                         checkMap[e.getX() / 32][e.getY() / 32] = true;
                         listObject[e.getX() / 2][e.getY() / 2] = 0;
+                        matrix[e.getX() / 32][e.getY() / 32] = 0;
                     }
 
                 }
@@ -1448,7 +1461,9 @@ public class BombermanGame extends Application {
             primaryStage.show();
         }
         listObject[e.getX() / 2][e.getY() / 2] = 0;
+
         e.setY(e.getY() - 2);
+        time = 0;
         listObject[e.getX() / 2][e.getY() / 2] = 1;
     }
 
@@ -1460,7 +1475,9 @@ public class BombermanGame extends Application {
             primaryStage.show();
         }
         listObject[e.getX() / 2][e.getY() / 2] = 0;
+
         e.setY(e.getY() + 2);
+        time = 0;
         listObject[e.getX() / 2][e.getY() / 2] = 1;
     }
 
@@ -1472,7 +1489,9 @@ public class BombermanGame extends Application {
             primaryStage.show();
         }
         listObject[e.getX() / 2][e.getY() / 2] = 0;
+
         e.setX(e.getX() - 2);
+        time = 0;
         listObject[e.getX() / 2][e.getY() / 2] = 1;
     }
 
@@ -1484,7 +1503,9 @@ public class BombermanGame extends Application {
             primaryStage.show();
         }
         listObject[e.getX() / 2][e.getY() / 2] = 0;
+
         e.setX(e.getX() + 2);
+        time = 0;
         listObject[e.getX() / 2][e.getY() / 2] = 1;
     }
 
@@ -1628,8 +1649,7 @@ public class BombermanGame extends Application {
             }
             for (Entity e : enemy) {
                 if (e instanceof Oneal) {
-                    findDirection(e);
-
+                    setMoveEnemy(e);
                 }
             }
         }
