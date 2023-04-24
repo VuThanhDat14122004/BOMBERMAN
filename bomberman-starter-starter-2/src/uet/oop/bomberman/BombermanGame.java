@@ -838,6 +838,8 @@ public class BombermanGame extends Application {
                             stillObjects.add(new Grass(i, j, Sprite.grass.getFxImage()));
                             checkMap[i][j] = true;
                             stillObjects.add(new Portal(i, j, Sprite.portal.getFxImage()));
+                            stillObjects.add(new Brick(i, j, Sprite.brick.getFxImage()));
+                            checkMap[i][j] = false;
                             listObject[i * 16][j * 16] = 4;
                             portalObject[i * 16][j * 16] = 1;
                             speedObject[i * 16][j * 16] = 0;
