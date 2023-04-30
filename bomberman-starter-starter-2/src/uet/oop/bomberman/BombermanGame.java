@@ -783,7 +783,7 @@ public class BombermanGame extends Application {
                     if (bomber.getX() >= e.getX() && bomber.getY() <= e.getY() && bomber.getX() - 28 <= e.getX() && bomber.getY() + 28 >= e.getY()) {
                         primaryBomber.setDeadAnimation(true);
                     }
-                    if (bomber.getX() <= e.getY() && bomber.getY() <= e.getY() && bomber.getX() + 28 >= e.getX() && bomber.getY() + 28 >= e.getY()) {
+                    if (bomber.getX() <= e.getX() && bomber.getY() <= e.getY() && bomber.getX() + 28 >= e.getX() && bomber.getY() + 28 >= e.getY()) {
                         primaryBomber.setDeadAnimation(true);
                     }
                 }
